@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dia-Genius</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0fff0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4caf50;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* espacio entre logo y texto */
+}
+
+.logo {
+  width: 100px;   /* ajusta tamaño del logo */
+  height: auto;
+  border-radius: 10px; /* opcional, esquinas redondeadas */
+}
+
+    nav {
+      background-color: #2e8b57;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      background-color: #3cb371;
+    }
+
+    section {
+      display: none;
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      color: #2e8b57;
+    }
+
+    .resaltado {
+      background-color: #dfffdc;
+      border-left: 4px solid #4caf50;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: block;
+      width: fit-content;
+      margin: 20px auto 0 auto;
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #4caf50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+  <div class="encabezado">
+    <img src="imagenes/logo.jpg" alt="Logo DIA-Genius" width="150">
+    <div class="titulo">
+      <h1>Bienvenidos a DIA-GENIUS</h1>
+      <p>La tecnología que cuida el agua y tus cultivos</p>
+    </div>
+  </div>
+</header>
+
+
+
+  <nav>
+    <a onclick="mostrarSeccion('inicio')">Inicio</a>
+    <a onclick="mostrarSeccion('quienes-somos')">¿Quiénes somos?</a>
+    <a onclick="mostrarSeccion('que-es')">¿Qué es Dia-Genius?</a>
+    <a onclick="mostrarSeccion('como-funciona')">¿Cómo funciona?</a>
+    <a onclick="mostrarSeccion('prototipo')">Prototipo</a>
+    <a onclick="mostrarSeccion('beneficios')">Beneficios</a>
+    <a onclick="mostrarSeccion('contacto')">Contáctanos</a>
+  </nav>
+
+  <!-- SECCIONES -->
+
+  <section id="inicio" class="active">
+  <h2>Inicio</h2>
+  <div class="resaltado">
+    <p><strong>Dia-Genius</strong> es un sistema de riego por aspersión inteligente, diseñado para optimizar el uso del agua en cultivos agrícolas usando sensores y diatomita.</p>
+  </div>
+    <p>
+    Dia-Genius nació como respuesta a un problema que viven muchos agricultores: la pérdida de cosechas por sequías prolongadas o por lluvias intensas. 
+    Nuestro propósito es ofrecer una alternativa práctica, accesible y sostenible que combine la tecnología con la fuerza de la naturaleza. 
+    Así surge este sistema de riego inteligente que integra sensores y el uso de la diatomita, un sustrato natural que ayuda a conservar la humedad en el suelo y aprovechar mejor el agua.
+  </p>
+
+  <!-- Misión -->
+  <h3 style="color:#2e8b57;">Misión</h3>
+  <div class="resaltado">
+    <p>Ofrecemos a pequeños y medianos agricultores una solución accesible que optimiza el uso del agua en los cultivos, mejora la sostenibilidad agrícola y promueve una producción más eficiente y responsable con el medio ambiente.</p>
+  </div>
+
+  <!-- Visión -->
+  <h3 style="color:#2e8b57;">Visión</h3>
+  <div class="resaltado">
+    <p>Ser un referente en soluciones sostenibles para la agricultura, promoviendo métodos de riego eficientes que reduzcan el impacto ambiental, mejoren la rentabilidad y transformen positivamente las comunidades rurales mediante el uso responsable de la tecnología y los recursos naturales.</p>
+  </div>
+
+  <p><em>“Regamos el presente cosechamos el futuro”</em></p>
+
+  <a class="cta-button" onclick="mostrarSeccion('quienes-somos')">Conoce más</a>
+</section>
+
+  <section id="quienes-somos">
+  <h2>¿Quiénes somos?</h2>
+  <div class="resaltado">
+    <p>Somos Ana María y Daniela Sofia , estudiantes del colegio TOMAS CARRASQUILLA y estamos comprometidas con la agricultura sostenible. 
+    Con <strong>Dia-Genius</strong> buscamos reducir el desperdicio de agua, aumentar la eficiencia de los cultivos 
+y al mismo tiempo aportar a la sostenibilidad ambiental. 
+Este sistema no solo responde a un problema técnico, sino también a una necesidad social: 
+apoyar a las comunidades rurales, darles más independencia en la gestión de sus cultivos 
+y contribuir al desarrollo agrícola del país. .</p>
+  </div>
+  <p>
+El proyecto nace del deseo de usar tecnología accesible para mejorar el campo colombiano, 
+con sensores, control remoto y sustrato natural. 
+Nuestro objetivo es que tanto pequeños como medianos agricultores tengan acceso a soluciones 
+que antes parecían reservadas para grandes empresas. 
+Creemos firmemente que la innovación no debe ser un privilegio, sino una herramienta al alcance de todos.  
+</p>
+
+  <!-- FOTO EQUIPO -->
+  <div style="text-align:center; margin-top:20px;">
+    <img src="imagenes/equipo.jpg" alt="Integrantes de Dia-Genius" 
+         width="400" style="border-radius:10px; box-shadow:0px 4px 10px rgba(0,0,0,0.2);">
+    <p><em>Integrantes de Dia-Genius</em></p>
+  </div>
+</section>
+
+
+  <section id="que-es">
+  <h2>¿Qué es Dia-Genius?</h2>
+  <div class="resaltado">
+    <p>
+      <strong>Dia-Genius</strong> es un sistema de riego inteligente por aspersión que integra sensores de humedad y temperatura 
+      con un microcontrolador y una aplicación móvil. Está diseñado para optimizar el uso del agua en los cultivos, 
+      evitando tanto el exceso como la falta de riego.
+    </p>
+  </div>
+
+  <p>
+    A diferencia de los sistemas de riego tradicionales, <strong>Dia-Genius</strong> aprovecha la 
+    <em>diatomita</em>, un sustrato natural que funciona como una esponja: absorbe el agua en exceso durante las lluvias 
+    y la libera poco a poco cuando el suelo comienza a secarse. De esta forma, los cultivos se mantienen con la humedad justa, 
+    mejorando su crecimiento y reduciendo pérdidas de agua.
+  </p>
+
+  <p>
+    Además, todo el sistema se conecta a una aplicación móvil que permite al agricultor encender o apagar el riego de manera 
+    remota, visualizar datos de los sensores en tiempo real y programar horarios de riego según las necesidades del cultivo. 
+    Es una combinación de tecnología y naturaleza que busca apoyar la agricultura moderna sin dejar de lado la sostenibilidad. 
+  </p>
+</section>
+
+
+  <section id="como-funciona">
+  <h2>¿Cómo funciona?</h2>
+  <p>
+    El sistema <strong>Dia-Genius</strong> funciona gracias a la integración de varios componentes electrónicos y materiales naturales 
+    que trabajan en conjunto para automatizar el riego y hacerlo más eficiente. 
+    A continuación, describimos cada uno de ellos:
+  </p>
+
+  <ul>
+    <li><strong>ESP32:</strong> Es el cerebro del sistema. Un microcontrolador que recibe la información de los sensores y decide cuándo activar el riego.</li>
+    <li><strong>Cable micro USB:</strong> Permite la alimentación y programación del microcontrolador.</li>
+    <li><strong>Módulo relé (1 canal, 5V):</strong> Funciona como un interruptor electrónico que enciende y apaga la bomba o válvula del sistema de riego.</li>
+    <li><strong>Sensor de humedad del suelo:</strong> Mide la cantidad de agua en la tierra y envía la información al ESP32.</li>
+    <li><strong>Sensor de temperatura y humedad (DHT11 o DHT22):</strong> Registra la temperatura y la humedad del ambiente, ayudando a tomar decisiones de riego más precisas.</li>
+    <li><strong>Aspersores pequeños:</strong> Distribuyen el agua de manera uniforme en el cultivo.</li>
+    <li><strong>Protoboard y cables Dupont:</strong> Facilitan las conexiones eléctricas entre los distintos componentes del sistema.</li>
+    <li><strong>Diatomita:</strong> Un sustrato natural que absorbe el agua en exceso y la libera poco a poco, manteniendo el suelo con la humedad adecuada.</li>
+  </ul>
+
+  <p>
+    En conjunto, todos estos elementos permiten que el sistema detecte cuándo el suelo necesita agua, active los aspersores automáticamente y 
+    regule el riego de forma precisa. Además, gracias a la conexión con la aplicación móvil, el agricultor puede supervisar y controlar el sistema en tiempo real.
+  </p>
+</section>
+
+
+  <section id="prototipo">
+  <h2>Prototipo</h2>
+  <p>
+    El prototipo de <strong>Dia-Genius</strong> está diseñado como una maqueta funcional que representa el sistema de riego inteligente. 
+    En él se integran los sensores, el microcontrolador, la bomba y el sistema de aspersión montados sobre una base que contiene diatomita visible, 
+    para mostrar cómo el agua es absorbida y liberada de manera gradual en el suelo.
+  </p>
+
+  <p>
+    Este prototipo no solo sirve como demostración, sino que también nos permitió probar la lógica del sistema y comprobar 
+    la eficiencia del riego controlado por sensores y app. Gracias a esto, podemos visualizar cómo el agricultor tendría control 
+    en tiempo real desde su celular.
+  </p>
+
+  <!-- FOTO DEL PROTOTIPO -->
+  <div style="text-align:center; margin-top:20px;">
+    <img src="imagenes/prototipo.jpg" alt="Prototipo Dia-Genius" width="500" 
+         style="border-radius:10px; box-shadow:0px 4px 10px rgba(0,0,0,0.3);">
+    <p><em>Prototipo del sistema de riego inteligente Dia-Genius</em></p>
+  </div>
+</section>
+
+
+ <section id="beneficios">
+  <h2>Beneficios</h2>
+  <div class="resaltado">
+    <p>
+      Con <strong>Dia-Genius</strong> no solo logramos un riego más eficiente, 
+      también apoyamos a los agricultores a mejorar sus cultivos de manera sostenible. 
+      Estos son algunos de los principales beneficios de nuestro sistema:
+    </p>
+  </div>
+
+  <ul>
+    <li><strong>Ahorro de agua:</strong> El sistema detecta cuándo el suelo necesita riego y solo activa los aspersores en el momento necesario.</li>
+    <li><strong>Mejora en la producción:</strong> Los cultivos se mantienen en condiciones óptimas de humedad, favoreciendo un crecimiento más saludable.</li>
+    <li><strong>Evita el riego innecesario:</strong> Gracias a los sensores, se elimina el desperdicio de recursos y se optimiza cada gota de agua.</li>
+    <li><strong>Control desde el celular:</strong> La app permite encender, apagar o programar el riego en cualquier momento y lugar.</li>
+    <li><strong>Uso de diatomita:</strong> Este sustrato natural ayuda a conservar el agua en el suelo y reduce la dependencia de químicos artificiales.</li>
+    <li><strong>Sostenibilidad:</strong> Contribuye al cuidado del medio ambiente al reducir el impacto ambiental de la agricultura tradicional.</li>
+  </ul>
+
+  <p>
+    En conclusión, <strong>Dia-Genius</strong> ofrece una herramienta moderna, práctica y ecológica 
+    que transforma la manera en que se gestiona el agua en los cultivos.
+  </p>
+</section>
+
+  <section id="contacto">
+  <h2>Contáctanos</h2>
+  <div class="resaltado">
+    <p>
+      ¿Quieres saber más sobre <strong>Dia-Genius</strong> o apoyarnos en este proyecto?  
+      Escríbenos o síguenos en nuestras redes sociales. ¡Estaremos felices de compartir más sobre nuestro trabajo contigo!
+    </p>
+  </div>
+
+  <p>★ <strong>Correo:</strong> <a href="mailto:diagenius2@gmail.com">diagenius2@gmail.com</a></p>
+  <p>★ <strong>Instagram:</strong> <a href="https://instagram.com/diagenius2025" target="_blank">@diagenius2025</a></p>
+  <p>★ <strong>TikTok:</strong> <a href="https://tiktok.com/@diagenius20242025" target="_blank">@diagenius20242025</a></p>
+  <p>★ <strong>Facebook:</strong> <a href="https://facebook.com/diagenius20242025" target="_blank">Día-Genius 2024-2025</a></p>
+  <p>★ <strong>Localización:</strong> Cl. 74 #62-44, Bogotá</p>
+
+  <!-- BOTONES DE ACCESO RÁPIDO -->
+  <div style="text-align:center; margin-top:20px;">
+    <a href="mailto:diagenius2@gmail.com" class="cta-button">📩 Enviar correo</a>
+    <a href="https://instagram.com/diagenius2025" target="_blank" class="cta-button">📷 Instagram</a>
+    <a href="https://tiktok.com/@diagenius20242025" target="_blank" class="cta-button">🎵 TikTok</a>
+    <a href="https://facebook.com/diagenius20242025" target="_blank" class="cta-button">📘 Facebook</a>
+  </div>
+</section>
+
+
+  <footer>
+    <p>© 2025 Dia-Genius | Proyecto académico ExpoTomás</p>
+  </footer>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('section');
+      secciones.forEach(seccion => {
+        seccion.classList.remove('active');
+      });
+
+      const activa = document.getElementById(id);
+      if (activa) {
+        activa.classList.add('active');
+        window.scrollTo(0, 0);
+      }
+    }
+  </script>
+</body>
+</html> 
